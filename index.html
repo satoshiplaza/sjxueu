@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> sᴊxᴜ.ᴇᴜ </title>
+<head>
     <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-      }
-  </style>
-  </head>
-  <body>
-    <h1>>  Hello World_</h1>
-  </body>
+        body {
+            background-color: black;
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin-top: 20%; /* Centers vertically */
+            font-size: 42px; /* Font size */
+            font-weight: bold; /* Make text bold */
+        }
+
+        .blinking-cursor {
+            font-weight: 100;
+            color: green;
+            animation: blink 2s infinite step-start;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        &gt; Hello World<span class="blinking-cursor">_</span>
+    </div>
+</body>
 </html>
