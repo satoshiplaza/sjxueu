@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin-top: 20%; /* Centers vertically */
+        }
+
+        .blinking-cursor {
+            font-weight: 100;
+            color: green;
+            animation: blink 2s infinite step-start; /* Slow down the blinking */
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        &gt; Hello World<span class="blinking-cursor">_</span>
+    </div>
+</body>
+</html>
