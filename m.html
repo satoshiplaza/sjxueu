@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Porsche Official Press Links</title>
+
+<style>
+
+/* ===== 基础变量（Light Mode 默认） ===== */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0f3d2e;        /* 深绿色 */
+  --desc-color: #3d5c52;
+}
+
+/* ===== Dark Mode 自动适配 ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0f1111;
+    --text-color: #4fa889;      /* 稍亮一点的绿色 */
+    --desc-color: #8bb8a9;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.container {
+  width: min(700px, 90vw);
+}
+
+a {
+  display: block;
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 24px 0;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.description {
+  font-size: clamp(14px, 1.6vw, 16px);
+  color: var(--desc-color);
+  margin-top: 6px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <a href="https://press.au.porsche.com/prod/presse_pag/PressResources.nsf/Content?ReadForm&languageversionid=672138" target="_blank">
+    Opening Gift Exchange – Official Porsche Press Release
+    <div class="description">
+      Porsche Centre Wenzhou Binhai official press coverage
+    </div>
+  </a>
+
+  <a href="https://press.cn.porsche.com/prod/presse_pag/PressResources.nsf/Content?ReadForm&languageversionid=83661&Level1ID=3" target="_blank">
+    Porsche & UNICEF China – Corporate Commitment Announcement
+    <div class="description">
+      Official Porsche China News Database
+    </div>
+  </a>
+
+  <a href="https://press.au.porsche.com/prod/presse_pag/PressResources.nsf/Content?ReadForm&languageversionid=672137" target="_blank">
+    Speech by Mr. Xu Suji – Porsche Centre Wenzhou Binhai
+    <div class="description">
+      Official press documentation and statement
+    </div>
+  </a>
+
+</div>
+
+</body>
+</html>
